@@ -15,8 +15,8 @@
 
 # mkdocs new
 
-mkdocs build --verbose --clean
-# mkdocs build  --clean
+# mkdocs build --verbose --clean
+mkdocs build  --clean
 # mkdocs serve
  
 mkdocs gh-deploy --config-file mkdocs.yml --remote-branch gh-pages

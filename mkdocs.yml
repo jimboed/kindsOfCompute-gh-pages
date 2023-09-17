@@ -1,0 +1,82 @@
+site_name: kindsOfCompute-gh-pages Docs
+site_description: kindsOfCompute-gh-pages
+ 
+repo_name: "jimboed/kindsOfCompute-gh-pages"
+repo_url: "https://github.com/jimboed/kindsOfCompute-gh-pages" 
+edit_uri: "edit/main/docs/"
+site_url: "https://github.com/jimboed/kindsOfCompute-gh-pages"
+
+icon:
+  logo: "cloud"
+
+
+theme:
+  name: material
+
+  features:
+    - navigation.instant
+    - navigation.top
+  palette:
+    primary: black
+
+
+markdown_extensions:
+    - toc:
+          permalink: true
+    - admonition
+    - footnotes 
+    - pymdownx.arithmatex
+    - markdown.extensions.attr_list
+    - pymdownx.tabbed
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - attr_list
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.progressbar
+    - attr_list
+    - attr_list
+
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences:
+        custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+        - name: flow
+          class: uml-flowchart
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: sequence
+          class: uml-sequence-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tasklist:
+          custom_checkbox: true
+          clickable_checkbox: true
+    - pymdownx.tilde
+    - codehilite:
+          guess_lang: true
+    - plantuml_markdown:
+          server: "http://www.plantuml.com/plantuml"
+
+
+
+plugins:
+  - mkdocs-jupyter:
+      include_source: True
+  - search
+  
+ 
+
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js
+    - https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
+    - https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.17.1/flowchart.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js
+    - https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+
