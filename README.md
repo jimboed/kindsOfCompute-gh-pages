@@ -1,2 +1,2 @@
 # kindsOfCompute
-https://jimboed.github.io/kindsOfCompute/
+https://jimboed.github.io/kindsOfCompute-gh-pages/
